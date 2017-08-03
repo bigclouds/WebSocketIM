@@ -24,8 +24,8 @@ layui.use(['layim', 'jquery', 'laytpl'], function(layim){
 		init: function() {
 			if ('WebSocket' in window) {
 				var host = window.location.host
-				if(window.location.post != ""){
-					host = host + ":" + window.location.port;
+				if(window.location.host != ""){
+					//host = host + ":" + window.location.port;
 				}
 				var url = 'ws://' + host + '/websocket/'+ getUid();
 				socket = new ReconnectingWebSocket(url, null, {debug: true, reconnectInterval: 3000});

@@ -23,8 +23,12 @@
                             <form action="" autocomplete="on" method="post" class="layui-form" lay-filter="login"> 
                                 <h1>登陆</h1> 
                                 <p> 
+                                    <label for="username" class="username" data-icon="u"> 用户名 </label>
+                                    <input id="username"  name="username" required="required" type="username" placeholder="username">
+                                </p>
+                                <p> 
                                     <label for="email" class="uname" data-icon="u"> 电子邮件 </label>
-                                    <input id="email"  name="email" required="required" type="email" placeholder="mymail@mail.com">
+                                    <input id="email"  name="email" type="email" placeholder="mymail@mail.com">
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd" data-icon="p"> 密码 </label>
@@ -167,7 +171,7 @@
 	    			} else if(data.code == 0) {
 	    				var host = window.location.host;
 	    				if(window.location.port != "") {
-	    					host = host + ":" + window.location.host;
+	    					//host = host + ":" + window.location.host;
 	    				}
 	    				window.location.href = "http://" + host + "/user/index";
 	    			}

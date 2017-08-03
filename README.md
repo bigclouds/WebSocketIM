@@ -142,6 +142,6 @@
 * gradle bootRun
 * swagger ui reference => http://localhost/swagger-ui.html
 * druid manage reference => http://localhost/druid/index.html
-	* username:admin 
+	* username:admin
 	* password:admin
 * inded page reference => http://localhost/
